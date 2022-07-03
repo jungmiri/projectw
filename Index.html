@@ -1,10 +1,10 @@
 <html>
 <head>
-<title>카카오톡 버튼있는 메시지 전송하기</title>
+	<title>카카오톡 버튼있는 메시지 전송하기</title>
 <script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
-<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
+	<p><strong>아래 카카오톡 아이콘을 눌러 전송하세요</strong> By. Blackcats4567</p>
 <a id="kakao-link-btn" href="javascript:sendLink()">
   <img
     src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
@@ -16,26 +16,33 @@
     Kakao.Link.sendDefault({
       objectType: 'feed',
       content: {
-        title: 'Two Are Better Than One',
-        description: '선규 미리 결혼합니다',
+        title: '이런 버튼있는 메시지',
+        description: '이런 메시지를 보내고 싶다고요? 아래 버튼을 눌러 방법을 알아보세요',
         imageUrl:
-          'https://resources.barunsonmcard.com/upload/invitation/220703/158539/cbd031bc-5381-464c-a062-8485ab0cd712.jpg',
+          'https://blackcats4567.github.io/deadcat/2020-06-06_19.08.30.png',
         link: {
-          mobileWebUrl: 'https://barunsonmcard.com/m/qnm',
-          webUrl: 'https://barunsonmcard.com/m/qnm',
+          mobileWebUrl: 'https://youtu.be/BpAe8d-CXKk',
+          webUrl: 'https://youtu.be/BpAe8d-CXKk',
         },
       },
       social: {
-        likeCount: 좋아요 수, //99999가 최대입니다
-        commentCount: 댓글 수, //99999가 최대입니다
-        sharedCount: 공유 수, //99999가 최대입니다
+        likeCount: 99999, //99999가 최대입니다
+        commentCount: 99999, //99999가 최대입니다
+        sharedCount: 99999, //99999가 최대입니다
       },
       buttons: [
         {
-          title: '청첩장 보기',
+          title: '버튼1',
           link: {
-            mobileWebUrl: 'https://barunsonmcard.com/m/qnm',
-            webUrl: 'https://barunsonmcard.com/m/qnm',
+            mobileWebUrl: 'https://youtu.be/BpAe8d-CXKk',
+            webUrl: 'https://youtu.be/BpAe8d-CXKk',
+          },
+        },
+        {
+          title: '버튼2',
+          link: {
+            mobileWebUrl: 'https://youtu.be/BpAe8d-CXKk',
+            webUrl: 'https://youtu.be/BpAe8d-CXKk',
           },
         },
       ],
